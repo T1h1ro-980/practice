@@ -79,67 +79,83 @@ if __name__ == '__main__':
 # Вывод
 # Размер датасета: 200
 # Количество батчей: 7
-# Epoch 1: loss=0.3427
-# Epoch 2: loss=0.1524
-# Epoch 3: loss=0.1349
-# Epoch 4: loss=0.1057
-# Epoch 5: loss=0.0880
-# Epoch 6: loss=0.0686
-# Epoch 7: loss=0.0619
-# Epoch 8: loss=0.0571
-# Epoch 9: loss=0.0436
-# Epoch 10: loss=0.0411
-# Epoch 11: loss=0.0334
-# Epoch 12: loss=0.0301
-# Epoch 13: loss=0.0277
-# Epoch 14: loss=0.0232
-# Epoch 15: loss=0.0210
-# Epoch 16: loss=0.0214
-# Epoch 17: loss=0.0178
-# Epoch 18: loss=0.0165
-# Epoch 19: loss=0.0155
-# Epoch 20: loss=0.0142
-# Epoch 21: loss=0.0153
-# Epoch 22: loss=0.0150
-# Epoch 23: loss=0.0137
-# Epoch 24: loss=0.0123
-# Epoch 25: loss=0.0129
-# Epoch 26: loss=0.0122
-# Epoch 27: loss=0.0127
-# Epoch 28: loss=0.0129
-# Epoch 29: loss=0.0120
-# Epoch 30: loss=0.0112
-# Epoch 31: loss=0.0113
-# Epoch 32: loss=0.0108
-# Epoch 33: loss=0.0104
-# Epoch 34: loss=0.0108
-# Epoch 35: loss=0.0114
-# Epoch 36: loss=0.0114
-# Epoch 37: loss=0.0106
-# Epoch 38: loss=0.0105
-# Epoch 39: loss=0.0111
-# Epoch 40: loss=0.0111
-# Epoch 41: loss=0.0107
-# Epoch 42: loss=0.0105
-# Epoch 43: loss=0.0112
-# Epoch 44: loss=0.0105
-# Epoch 45: loss=0.0105
-# Epoch 46: loss=0.0105
-# Epoch 47: loss=0.0109
-# Epoch 48: loss=0.0106
-# Epoch 49: loss=0.0105
-# Epoch 50: loss=0.0109
-# Epoch 51: loss=0.0101
-# Epoch 52: loss=0.0103
-# Epoch 53: loss=0.0104
-# Epoch 54: loss=0.0112
-# Epoch 55: loss=0.0110
-# Epoch 56: loss=0.0103
-# Epoch 57: loss=0.0105
-# Epoch 58: loss=0.0114
-# Epoch 59: loss=0.0104
-# Epoch 60: loss=0.0097
-# Epoch 61: loss=0.0102
+# Epoch 1: loss=0.2972
+# Epoch 2: loss=0.2315
+# Epoch 3: loss=0.1919
+# Epoch 4: loss=0.1678
+# Epoch 5: loss=0.1481
+# Epoch 6: loss=0.1194
+# Epoch 7: loss=0.0997
+# Epoch 8: loss=0.0905
+# Epoch 9: loss=0.0786
+# Epoch 10: loss=0.0657
+# Epoch 11: loss=0.0566
+# Epoch 12: loss=0.0495
+# Epoch 13: loss=0.0438
+# Epoch 14: loss=0.0429
+# Epoch 15: loss=0.0342
+# Epoch 16: loss=0.0285
+# Epoch 17: loss=0.0277
+# Epoch 18: loss=0.0252
+# Epoch 19: loss=0.0213
+# Epoch 20: loss=0.0211
+# Epoch 21: loss=0.0189
+# Epoch 22: loss=0.0168
+# Epoch 23: loss=0.0157
+# Epoch 24: loss=0.0142
+# Epoch 25: loss=0.0138
+# Epoch 26: loss=0.0140
+# Epoch 27: loss=0.0128
+# Epoch 28: loss=0.0118
+# Epoch 29: loss=0.0115
+# Epoch 30: loss=0.0114
+# Epoch 31: loss=0.0110
+# Epoch 32: loss=0.0110
+# Epoch 33: loss=0.0108
+# Epoch 34: loss=0.0109
+# Epoch 35: loss=0.0112
+# Epoch 36: loss=0.0099
+# Epoch 37: loss=0.0124
+# Epoch 38: loss=0.0106
+# Epoch 39: loss=0.0104
+# Epoch 40: loss=0.0107
+# Epoch 41: loss=0.0104
+# Epoch 42: loss=0.0112
+# Epoch 43: loss=0.0109
+# Epoch 44: loss=0.0109
+# Epoch 45: loss=0.0099
+# Epoch 46: loss=0.0093
+# Epoch 47: loss=0.0102
+# Epoch 48: loss=0.0119
+# Epoch 49: loss=0.0107
+# Epoch 50: loss=0.0101
+# Epoch 51: loss=0.0104
+# Epoch 52: loss=0.0107
+# Epoch 53: loss=0.0108
+# Epoch 54: loss=0.0100
+# Epoch 55: loss=0.0104
+# Epoch 56: loss=0.0104
+# Epoch 57: loss=0.0097
+# Epoch 58: loss=0.0102
+# Epoch 59: loss=0.0103
+# Epoch 60: loss=0.0102
+# Epoch 61: loss=0.0103
+# Epoch 62: loss=0.0106
+# Epoch 63: loss=0.0104
+# Epoch 64: loss=0.0099
+# Epoch 65: loss=0.0097
+# Epoch 66: loss=0.0097
+# Epoch 67: loss=0.0098
+# Epoch 68: loss=0.0106
+# Epoch 69: loss=0.0097
+# Epoch 70: loss=0.0102
+# Epoch 71: loss=0.0107
+# Epoch 72: loss=0.0107
+# Epoch 73: loss=0.0097
+# Epoch 74: loss=0.0107
+# Epoch 75: loss=0.0098
+# Epoch 76: loss=0.0107
+
 
 # 1.2 Расширение логистической регрессии
 # Модифицируйте существующую логистическую регрессию:
@@ -213,3 +229,18 @@ if __name__ == '__main__':
     new_model.load_state_dict(torch.load('logreg_torch.pth'))
     new_model.eval() 
     plt.show()
+
+
+# Вывод
+# Размер датасета: 150
+# Количество батчей: 5
+# Epoch 10: loss=0.6299, acc=0.6460
+# Epoch 20: loss=0.5459, acc=0.7477
+# Epoch 30: loss=0.4171, acc=0.7426
+# Epoch 40: loss=0.2583, acc=0.9568
+# Epoch 50: loss=0.3560, acc=0.8381
+# Epoch 60: loss=0.2211, acc=0.9375
+# Epoch 70: loss=0.2322, acc=0.9290
+# Epoch 80: loss=0.1926, acc=0.9568
+# Epoch 90: loss=0.1939, acc=0.9568
+# Epoch 100: loss=0.1850, acc=0.9443
