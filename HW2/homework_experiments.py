@@ -293,3 +293,34 @@ if __name__ == '__main__':
     plt.grid(True)
     plt.tight_layout()
     plt.show()
+
+# Вывод
+# ==> Обучение: SGD | lr=0.01 | bs=16 | ds=LinRegDataset.csv
+# Размер датасета: 300
+# Количество батчей: 10
+# Epoch 10: loss=3316.2048
+# Epoch 20: loss=3372.5847
+# Epoch 30: loss=3307.4299
+# Epoch 40: loss=3383.9160
+# Epoch 50: loss=3355.3123
+# Epoch 60: loss=3243.3149
+# Epoch 70: loss=3436.4735
+# Epoch 80: loss=3333.2291
+# Epoch 90: loss=3303.4890
+# Epoch 100: loss=3377.4272
+
+# ==> Обучение: SGD | lr=0.01 | bs=16 | ds=LinRegDatasetEdited.csv
+# Размер датасета: 300
+# Количество батчей: 10
+# Epoch 10: loss=3436.6637
+# Epoch 20: loss=3300.1933
+# Epoch 30: loss=3433.2534
+# Epoch 40: loss=3331.6855
+# Epoch 50: loss=3284.3661
+# Epoch 60: loss=3441.6747
+# Epoch 70: loss=3404.3757
+# Epoch 80: loss=3327.3765
+# Epoch 90: loss=3280.0090
+# Epoch 100: loss=3252.4396
+
+# Визуализация в README.md
