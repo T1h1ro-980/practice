@@ -10,48 +10,48 @@
 # - Сравните точность и время обучения
 # - Проанализируйте количество параметров
 
-# import torch
-# from datasets import get_mnist_loaders
-# from models import FullyConnectedModel
-# from trainer import train_model
-# from utils import plot_training_history, count_parameters
-# from time import time
+import torch
+from datasets import get_mnist_loaders
+from models import FullyConnectedModel
+from trainer import train_model
+from utils import plot_training_history, count_parameters
+from time import time
 
-# configs_sizes = [
-#     [64, 32, 16],
-#     [256, 128, 64],
-#     [1024, 512, 256],
-#     [2048, 1024, 512]
-#                 ]
+configs_sizes = [
+    [64, 32, 16],
+    [256, 128, 64],
+    [1024, 512, 256],
+    [2048, 1024, 512]
+                ]
 
 
-# for current_sizes in configs_sizes:
-#     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+for current_sizes in configs_sizes:
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-#     train_loader, test_loader = get_mnist_loaders(batch_size=64)
+    train_loader, test_loader = get_mnist_loaders(batch_size=64)
 
-#     model = FullyConnectedModel(
-#         input_size=784,
-#         num_classes=10,
-#         layers = [
-#             {"type": "linear", "size": current_sizes[0]},
-#             {"type": "relu"},
-#             {"type": "linear", "size": current_sizes[1]},
-#             {"type": "relu"},
-#             {"type": "linear", "size": current_sizes[2]},
-#             {"type": "relu"},
-#             {"type": "linear", "size": 10}
-#         ]
-#     ).to(device)
+    model = FullyConnectedModel(
+        input_size=784,
+        num_classes=10,
+        layers = [
+            {"type": "linear", "size": current_sizes[0]},
+            {"type": "relu"},
+            {"type": "linear", "size": current_sizes[1]},
+            {"type": "relu"},
+            {"type": "linear", "size": current_sizes[2]},
+            {"type": "relu"},
+            {"type": "linear", "size": 10}
+        ]
+    ).to(device)
 
-#     print(f"Model parameters: {count_parameters(model)}")
+    print(f"Model parameters: {count_parameters(model)}")
 
-#     start_time = time()
-#     history = train_model(model, train_loader, test_loader, epochs=5, device=str(device))
-#     end_time = time()
-#     print(f"Время обучения: {end_time-start_time}")
+    start_time = time()
+    history = train_model(model, train_loader, test_loader, epochs=5, device=str(device))
+    end_time = time()
+    print(f"Время обучения: {end_time-start_time}")
 
-#     plot_training_history(history) 
+    plot_training_history(history) 
 
 # Выводы в README.md
 
