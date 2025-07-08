@@ -55,6 +55,7 @@ class Solarize:
         img_np[mask] = 1.0 - img_np[mask]
         return torch.from_numpy(img_np)
 
+
 class Posterize:
     """Уменьшает количество бит на канал."""
     def __init__(self, bits=4):
